@@ -1,6 +1,5 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
+# Ask Doubt on telegram @ramjiofficial
 
 import os
 import re
@@ -35,7 +34,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps..\n\nUse /stop to stop any ongoing task.</b>")
+    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps.. its develop By🅹🅰🅸 🆂🅷🆁🅸 🆁🅰🅼 \n\nUse /stop to stop any ongoing task.</b>")
 
 
 @bot.on_message(filters.command("stop"))
@@ -113,6 +112,16 @@ async def upload(bot: Client, m: Message):
         MR = highlighter 
     else:
         MR = raw_text3
+
+    await editable.edit(" Extracted By ➤  ")
+    input3: Message = await bot.listen(editable.chat.id)
+    raw_text3 = input3.text
+    await input3.delete(True)
+    highlighter  = f"️ ⁪⁬⁮⁮⁮"
+    if raw_text3 == 'Robin':
+        MR = highlighter 
+    else:
+        MR = raw_text3
    
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
@@ -166,8 +175,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**𝔹ᴀᴛᴄʜ** » \n**Extracted By ➤**{raw_text0}**'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**𝔹ᴀᴛᴄʜ** » \n**Extracted By ➤**{raw_text0}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -210,7 +219,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
+    await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎 /🅹🅰🅸 🆂🅷🆁🅸 🆁🅰🅼**")
 
 
 bot.run()
