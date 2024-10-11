@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="VJ-TXT-LEECH-BOT Logo">
+  <img src="https:.jpg" alt="">
 </p>
 <h1 align="center">
   🅹🅰🅸 🆂🅷🆁🅸 🆁🅰🅼
